@@ -11,7 +11,7 @@ import modelo.Conexion;
 
 public class Contrl_login {
     //ola
-    //gato
+    //perro
   public boolean loginUser(Usuario objeto){
         
         
