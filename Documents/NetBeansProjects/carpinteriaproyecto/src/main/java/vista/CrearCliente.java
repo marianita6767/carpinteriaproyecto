@@ -136,6 +136,8 @@ public class CrearCliente extends javax.swing.JPanel {
             }
         });
         add(rSButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, 90, -1));
+
+        jLabel8.setBackground(new java.awt.Color(228, 233, 247));
         add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 90, 650, 390));
 
         jLabel9.setText("error");

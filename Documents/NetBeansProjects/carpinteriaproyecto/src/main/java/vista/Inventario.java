@@ -54,11 +54,13 @@ public class Inventario extends javax.swing.JPanel {
         btnMovimientos = new rojeru_san.RSButtonRiple();
         btnNuevo = new rojeru_san.RSButtonRiple();
         panelprinicpal = new javax.swing.JPanel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jEditorPane1 = new javax.swing.JEditorPane();
 
         setBackground(new java.awt.Color(228, 233, 247));
         setToolTipText("");
         setMaximumSize(new java.awt.Dimension(32767, 32));
-        setPreferredSize(new java.awt.Dimension(1015, 690));
+        setPreferredSize(new java.awt.Dimension(1290, 730));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         btnMateriales.setBackground(new java.awt.Color(0, 0, 0));
@@ -132,6 +134,11 @@ public class Inventario extends javax.swing.JPanel {
 
         panelprinicpal.setBackground(new java.awt.Color(228, 233, 247));
         panelprinicpal.setPreferredSize(new java.awt.Dimension(1000, 490));
+
+        jScrollPane1.setViewportView(jEditorPane1);
+
+        panelprinicpal.add(jScrollPane1);
+
         add(panelprinicpal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 950, 520));
     }// </editor-fold>//GEN-END:initComponents
     
@@ -198,6 +205,8 @@ public class Inventario extends javax.swing.JPanel {
     private rojeru_san.RSButtonRiple btnMovimientos;
     private rojeru_san.RSButtonRiple btnNuevo;
     private rojeru_san.RSButtonRiple btnProductos;
+    private javax.swing.JEditorPane jEditorPane1;
+    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel panelprinicpal;
     private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
     // End of variables declaration//GEN-END:variables

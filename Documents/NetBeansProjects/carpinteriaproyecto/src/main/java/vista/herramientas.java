@@ -64,11 +64,13 @@ public class herramientas extends javax.swing.JPanel {
         rSCheckBoxMaterial1 = new RSMaterialComponent.RSCheckBoxMaterial();
         rSComboBox1 = new RSMaterialComponent.RSComboBox();
 
+        setMinimumSize(new java.awt.Dimension(1290, 730));
         setPreferredSize(new java.awt.Dimension(960, 510));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelprincipal.setBackground(new java.awt.Color(228, 233, 247));
-        panelprincipal.setPreferredSize(new java.awt.Dimension(960, 510));
+        panelprincipal.setMinimumSize(new java.awt.Dimension(1290, 730));
+        panelprincipal.setPreferredSize(new java.awt.Dimension(1290, 730));
         panelprincipal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(46, 49, 82));
@@ -286,7 +288,7 @@ public class herramientas extends javax.swing.JPanel {
         rSComboBox1.setColorFondo(new java.awt.Color(0, 0, 0));
         panelprincipal.add(rSComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 370, -1, -1));
 
-        add(panelprincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        add(panelprincipal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1290, 780));
     }// </editor-fold>//GEN-END:initComponents
 
     private void rSButtonRiple1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonRiple1ActionPerformed
