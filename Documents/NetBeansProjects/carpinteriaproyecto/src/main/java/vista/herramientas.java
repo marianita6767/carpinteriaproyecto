@@ -60,8 +60,6 @@ public class herramientas extends javax.swing.JPanel {
         rSButtonRiple11 = new rojeru_san.RSButtonRiple();
         rSButtonRiple12 = new rojeru_san.RSButtonRiple();
         rSComboBoxMaterial1 = new RSMaterialComponent.RSComboBoxMaterial();
-        rSComboMetro1 = new rojerusan.RSComboMetro();
-        rSCheckBoxMaterial1 = new RSMaterialComponent.RSCheckBoxMaterial();
         rSComboBox1 = new RSMaterialComponent.RSComboBox();
 
         setPreferredSize(new java.awt.Dimension(960, 510));
@@ -275,10 +273,6 @@ public class herramientas extends javax.swing.JPanel {
         rSComboBoxMaterial1.setForeground(new java.awt.Color(255, 255, 255));
         rSComboBoxMaterial1.setColorMaterial(new java.awt.Color(0, 153, 255));
         panelprincipal.add(rSComboBoxMaterial1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 330, -1, -1));
-        panelprincipal.add(rSComboMetro1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 330, -1, -1));
-
-        rSCheckBoxMaterial1.setText("rSCheckBoxMaterial1");
-        panelprincipal.add(rSCheckBoxMaterial1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 320, -1, -1));
 
         rSComboBox1.setBackground(new java.awt.Color(0, 0, 0));
         rSComboBox1.setColorArrow(new java.awt.Color(255, 255, 255));
@@ -372,9 +366,7 @@ public class herramientas extends javax.swing.JPanel {
     private rojeru_san.RSButtonRiple rSButtonRiple7;
     private rojeru_san.RSButtonRiple rSButtonRiple8;
     private rojeru_san.RSButtonRiple rSButtonRiple9;
-    private RSMaterialComponent.RSCheckBoxMaterial rSCheckBoxMaterial1;
     private RSMaterialComponent.RSComboBox rSComboBox1;
     private RSMaterialComponent.RSComboBoxMaterial rSComboBoxMaterial1;
-    private rojerusan.RSComboMetro rSComboMetro1;
     // End of variables declaration//GEN-END:variables
 }

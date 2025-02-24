@@ -63,7 +63,7 @@ public class materiales extends javax.swing.JPanel {
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panelprincipal.setBackground(new java.awt.Color(228, 233, 247));
-        panelprincipal.setPreferredSize(new java.awt.Dimension(960, 510));
+        panelprincipal.setPreferredSize(new java.awt.Dimension(1290, 730));
         panelprincipal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel1.setBackground(new java.awt.Color(46, 49, 82));
