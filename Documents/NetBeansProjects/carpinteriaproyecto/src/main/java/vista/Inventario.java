@@ -64,13 +64,13 @@ public class Inventario extends javax.swing.JPanel {
         btnMateriales.setBackground(new java.awt.Color(0, 0, 0));
         btnMateriales.setIcon(new javax.swing.ImageIcon(getClass().getResource("/box.png"))); // NOI18N
         btnMateriales.setText("  Materiales");
-        btnMateriales.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnMateriales.setFont(new java.awt.Font("Roboto Bold", 1, 15)); // NOI18N
         btnMateriales.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMaterialesActionPerformed(evt);
             }
         });
-        add(btnMateriales, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, 170, -1));
+        add(btnMateriales, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 170, 40));
 
         txtBuscar.setForeground(new java.awt.Color(0, 0, 0));
         txtBuscar.setColorIcon(new java.awt.Color(0, 0, 0));
@@ -83,41 +83,41 @@ public class Inventario extends javax.swing.JPanel {
                 txtBuscarActionPerformed(evt);
             }
         });
-        add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, 357, -1));
+        add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, 357, 30));
 
         btnHerramientas.setBackground(new java.awt.Color(0, 0, 0));
         btnHerramientas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/wrench.png"))); // NOI18N
         btnHerramientas.setText("  Herramientas");
-        btnHerramientas.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnHerramientas.setFont(new java.awt.Font("Roboto Bold", 1, 15)); // NOI18N
         btnHerramientas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnHerramientasActionPerformed(evt);
             }
         });
-        add(btnHerramientas, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 30, 180, -1));
+        add(btnHerramientas, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 20, 180, -1));
 
         btnProductos.setBackground(new java.awt.Color(0, 0, 0));
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/tienda-de-comestibles.png"))); // NOI18N
         btnProductos.setText("  Productos terminados");
         btnProductos.setToolTipText("");
-        btnProductos.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnProductos.setFont(new java.awt.Font("Roboto Bold", 1, 15)); // NOI18N
         btnProductos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnProductosActionPerformed(evt);
             }
         });
-        add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 30, 250, -1));
+        add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 20, 240, -1));
 
         btnMovimientos.setBackground(new java.awt.Color(0, 0, 0));
         btnMovimientos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/transfer.png"))); // NOI18N
         btnMovimientos.setText("  Movimientos");
-        btnMovimientos.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnMovimientos.setFont(new java.awt.Font("Roboto Bold", 1, 15)); // NOI18N
         btnMovimientos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMovimientosActionPerformed(evt);
             }
         });
-        add(btnMovimientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 30, 180, -1));
+        add(btnMovimientos, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 170, -1));
 
         btnNuevo.setBackground(new java.awt.Color(46, 49, 82));
         btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/plus (2).png"))); // NOI18N
@@ -128,10 +128,11 @@ public class Inventario extends javax.swing.JPanel {
                 btnNuevoActionPerformed(evt);
             }
         });
-        add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 110, 130, -1));
+        add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, 110, 30));
 
+        panelprinicpal.setBackground(new java.awt.Color(228, 233, 247));
         panelprinicpal.setPreferredSize(new java.awt.Dimension(1000, 490));
-        add(panelprinicpal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, -1));
+        add(panelprinicpal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 950, 520));
     }// </editor-fold>//GEN-END:initComponents
     
     
@@ -143,6 +144,14 @@ public class Inventario extends javax.swing.JPanel {
       this.btnProductos.setSelected(false);
       this.btnMovimientos.setSelected(false);
         
+        materiales es = new materiales();
+        es.setSize(890,690 );
+        es.setLocation(0,0);
+        
+        panelprinicpal.removeAll();
+        panelprinicpal.add(es);
+        panelprinicpal.revalidate();
+        panelprinicpal.repaint();
 
          }
     }//GEN-LAST:event_btnMaterialesActionPerformed
@@ -152,7 +161,22 @@ public class Inventario extends javax.swing.JPanel {
     }//GEN-LAST:event_txtBuscarActionPerformed
 
     private void btnHerramientasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHerramientasActionPerformed
-        // TODO add your handling code here:
+    if(!this.btnHerramientas.isSelected()) {
+    this.btnMateriales.setSelected(false);   
+   this.btnHerramientas.setSelected(true);
+      this.btnProductos.setSelected(false);
+      this.btnMovimientos.setSelected(false);
+      
+        herramientas h = new herramientas();
+        h.setSize(890,690 );
+        h.setLocation(0,0);
+        
+        panelprinicpal.removeAll();
+        panelprinicpal.add(h);
+        panelprinicpal.revalidate();
+        panelprinicpal.repaint();
+
+         }
     }//GEN-LAST:event_btnHerramientasActionPerformed
 
     private void btnProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductosActionPerformed
