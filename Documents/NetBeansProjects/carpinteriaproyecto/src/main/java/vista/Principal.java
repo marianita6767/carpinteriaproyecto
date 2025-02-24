@@ -108,7 +108,7 @@ public class Principal extends javax.swing.JFrame {
 
         rSButton3.setBackground(new java.awt.Color(29, 30, 51));
         rSButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        rSButton3.setText("Caja");
+        rSButton3.setText("Gestion de usuarios");
         rSButton3.setColorHover(new java.awt.Color(128, 128, 128));
         rSButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         rSButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -134,7 +134,7 @@ public class Principal extends javax.swing.JFrame {
 
         tres.setBackground(new java.awt.Color(29, 30, 51));
         tres.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        tres.setText("  Gestion de usuarios");
+        tres.setText("Maquinaria");
         tres.setColorHover(new java.awt.Color(128, 128, 128));
         tres.setColorTextHover(new java.awt.Color(0, 0, 0));
         tres.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N

@@ -159,7 +159,7 @@
                     <LineBorder/>
                   </Border>
                 </Property>
-                <Property name="text" type="java.lang.String" value="Caja"/>
+                <Property name="text" type="java.lang.String" value="Gestion de usuarios"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="80" green="80" red="80" type="rgb"/>
                 </Property>
@@ -219,7 +219,7 @@
                     <LineBorder/>
                   </Border>
                 </Property>
-                <Property name="text" type="java.lang.String" value="  Gestion de usuarios"/>
+                <Property name="text" type="java.lang.String" value="Maquinaria"/>
                 <Property name="colorHover" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="80" green="80" red="80" type="rgb"/>
                 </Property>
