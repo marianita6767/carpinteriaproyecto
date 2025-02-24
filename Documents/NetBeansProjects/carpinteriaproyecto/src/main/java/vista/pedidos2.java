@@ -41,8 +41,9 @@ private void showAddDataDialog() {
         rSButtonMaterialTwo2 = new RSMaterialComponent.RSButtonMaterialTwo();
         rSButtonMaterialTwo3 = new RSMaterialComponent.RSButtonMaterialTwo();
 
-        jPanel1.setBackground(new java.awt.Color(29, 30, 51));
+        jPanel1.setBackground(new java.awt.Color(228, 233, 247));
         jPanel1.setPreferredSize(new java.awt.Dimension(1290, 690));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         Tabla1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Tabla1.setModel(new javax.swing.table.DefaultTableModel(
@@ -58,11 +59,13 @@ private void showAddDataDialog() {
             }
         ));
         Tabla1.setBackgoundHead(new java.awt.Color(29, 30, 51));
-        Tabla1.setBackgoundHover(new java.awt.Color(29, 30, 51));
+        Tabla1.setBackgoundHover(new java.awt.Color(228, 233, 247));
         Tabla1.setColorPrimaryText(new java.awt.Color(0, 0, 0));
         Tabla1.setColorSecundaryText(new java.awt.Color(0, 0, 0));
         Tabla1.setSelectionBackground(new java.awt.Color(29, 30, 91));
         jScrollPane2.setViewportView(Tabla1);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 180, 1310, 160));
 
         rSButtonMaterialTwo1.setBackground(new java.awt.Color(29, 30, 51));
         rSButtonMaterialTwo1.setText("Nuevo +");
@@ -72,6 +75,7 @@ private void showAddDataDialog() {
                 rSButtonMaterialTwo1ActionPerformed(evt);
             }
         });
+        jPanel1.add(rSButtonMaterialTwo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 130, 86, 37));
 
         rSTextFieldMaterialIcon1.setForeground(new java.awt.Color(29, 30, 91));
         rSTextFieldMaterialIcon1.setColorIcon(new java.awt.Color(29, 30, 111));
@@ -83,6 +87,7 @@ private void showAddDataDialog() {
                 rSTextFieldMaterialIcon1ActionPerformed(evt);
             }
         });
+        jPanel1.add(rSTextFieldMaterialIcon1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, 28));
 
         rSButtonMaterialTwo2.setBackground(new java.awt.Color(29, 30, 51));
         rSButtonMaterialTwo2.setText("Editar *");
@@ -92,6 +97,7 @@ private void showAddDataDialog() {
                 rSButtonMaterialTwo2ActionPerformed(evt);
             }
         });
+        jPanel1.add(rSButtonMaterialTwo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 130, 86, 37));
 
         rSButtonMaterialTwo3.setBackground(new java.awt.Color(29, 30, 51));
         rSButtonMaterialTwo3.setText("Eliminar -");
@@ -101,50 +107,20 @@ private void showAddDataDialog() {
                 rSButtonMaterialTwo3ActionPerformed(evt);
             }
         });
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addComponent(rSTextFieldMaterialIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(rSButtonMaterialTwo2, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(rSButtonMaterialTwo3, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rSButtonMaterialTwo1, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1673, 1673, 1673))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 1249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(1688, 1688, 1688))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(18, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(rSButtonMaterialTwo1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rSButtonMaterialTwo2, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rSButtonMaterialTwo3, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(rSTextFieldMaterialIcon1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(453, 453, 453))
-        );
+        jPanel1.add(rSButtonMaterialTwo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 130, 86, 37));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1293, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 1293, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
