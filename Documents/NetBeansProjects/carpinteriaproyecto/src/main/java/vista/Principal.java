@@ -25,14 +25,7 @@ public class Principal extends javax.swing.JFrame {
  
         this.uno.setSelected(true);
         
-        Escritorio1 es = new Escritorio1();
-        es.setSize(890,690 );
-        es.setLocation(0,0);
-        
-        contenedor.removeAll();
-        contenedor.add(es, BorderLayout.CENTER);
-        contenedor.revalidate();
-        contenedor.repaint();
+      
 
         
     }
@@ -314,14 +307,7 @@ public class Principal extends javax.swing.JFrame {
             this.cinco.setSelected(false);
                this.seis.setSelected(false);
                   this.siete.setSelected(false);
-    Escritorio1 es = new Escritorio1();
-        es.setSize(890,690 );
-        es.setLocation(0,0);
-        
-        contenedor.removeAll();
 
-        contenedor.revalidate();
-        contenedor.repaint();
                   
    
   }   
