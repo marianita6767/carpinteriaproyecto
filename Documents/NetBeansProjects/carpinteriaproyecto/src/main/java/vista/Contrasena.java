@@ -54,7 +54,7 @@ public class Contrasena extends javax.swing.JFrame {
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         txt_usuario1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        txt_usuario1.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
+        txt_usuario1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         txt_usuario1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 txt_usuario1MousePressed(evt);
