@@ -58,6 +58,38 @@ public class Contrasena extends javax.swing.JFrame {
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 35)); // NOI18N
+
+        txt_usuario1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt_usuario1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        txt_usuario1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txt_usuario1MousePressed(evt);
+            }
+        });
+        txt_usuario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_usuario1ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txt_usuario1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 270, 420, 40));
+
+        login.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        login.setText("Continuar");
+        login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loginMouseClicked(evt);
+            }
+        });
+        login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginActionPerformed(evt);
+            }
+        });
+        jPanel9.add(login, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 380, 160, 50));
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 41)); // NOI18N
+
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Restablece la contraseña");
         jPanel9.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 450, 80));
