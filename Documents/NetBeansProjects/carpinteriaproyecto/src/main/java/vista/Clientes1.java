@@ -26,108 +26,174 @@ public class Clientes1 extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        rSButtonIconOne2 = new RSMaterialComponent.RSButtonIconOne();
-        rSTextFieldMaterialIcon1 = new RSMaterialComponent.RSTextFieldMaterialIcon();
-        rSButtonIconOne3 = new RSMaterialComponent.RSButtonIconOne();
         jScrollPane2 = new javax.swing.JScrollPane();
-        rSTableMetroCustom1 = new RSMaterialComponent.RSTableMetroCustom();
-        rSButtonIconOne1 = new RSMaterialComponent.RSButtonIconOne();
+        Tabla1 = new RSMaterialComponent.RSTableMetroCustom();
+        txtBuscar = new RSMaterialComponent.RSTextFieldMaterialIcon();
+        btnNuevo = new rojeru_san.RSButtonRiple();
+        btnNuevo1 = new rojeru_san.RSButtonRiple();
+        btnNuevo2 = new rojeru_san.RSButtonRiple();
+        jPanel1 = new javax.swing.JPanel();
+        btnNuevo3 = new rojeru_san.RSButtonRiple();
+        btnNuevo4 = new rojeru_san.RSButtonRiple();
 
+        setBackground(new java.awt.Color(228, 233, 247));
         setPreferredSize(new java.awt.Dimension(1293, 690));
+        setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        rSButtonIconOne2.setBackground(new java.awt.Color(29, 30, 51));
-        rSButtonIconOne2.setBackgroundHover(new java.awt.Color(41, 38, 76));
-        rSButtonIconOne2.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.ADD);
-
-        rSTextFieldMaterialIcon1.setForeground(new java.awt.Color(29, 30, 51));
-        rSTextFieldMaterialIcon1.setColorIcon(new java.awt.Color(29, 30, 51));
-        rSTextFieldMaterialIcon1.setColorMaterial(new java.awt.Color(29, 30, 51));
-        rSTextFieldMaterialIcon1.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.SEARCH);
-        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("vista/Bundle"); // NOI18N
-        rSTextFieldMaterialIcon1.setPlaceholder(bundle.getString("Clientes1.rSTextFieldMaterialIcon1.placeholder")); // NOI18N
-
-        rSButtonIconOne3.setBackground(new java.awt.Color(29, 30, 51));
-        rSButtonIconOne3.setBackgroundHover(new java.awt.Color(41, 38, 76));
-        rSButtonIconOne3.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.RATE_REVIEW);
-
-        rSTableMetroCustom1.setForeground(new java.awt.Color(29, 30, 51));
-        rSTableMetroCustom1.setModel(new javax.swing.table.DefaultTableModel(
+        Tabla1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Tabla1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {"01", null, null, null, null},
-                {"02", null, null, null, null},
-                {"03", null, null, null, null},
-                {"04", null, null, null, null},
-                {"05", null, null, null, null},
-                {"06", null, null, null, null},
-                {"07", null, null, null, null},
-                {"08", null, null, null, null},
-                {"09", null, null, null, null},
-                {"10", null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+
             },
             new String [] {
-                "ID", "Nombre", "Telefono", "Correo", "Direccion"
+                "#", "tipo_cedula", "Numero", "Nombre", "Apellido", "Correo", "Telefono", "Direccion"
             }
-        ));
-        rSTableMetroCustom1.setBackgoundHead(new java.awt.Color(29, 30, 51));
-        rSTableMetroCustom1.setBackgoundHover(new java.awt.Color(255, 255, 255));
-        rSTableMetroCustom1.setColorBorderHead(new java.awt.Color(255, 255, 255));
-        rSTableMetroCustom1.setColorBorderRows(new java.awt.Color(255, 255, 255));
-        rSTableMetroCustom1.setColorPrimary(new java.awt.Color(29, 30, 51));
-        rSTableMetroCustom1.setColorPrimaryText(new java.awt.Color(255, 255, 255));
-        rSTableMetroCustom1.setColorSecondary(new java.awt.Color(29, 30, 51));
-        rSTableMetroCustom1.setColorSecundaryText(new java.awt.Color(255, 255, 255));
-        rSTableMetroCustom1.setGridColor(new java.awt.Color(255, 255, 255));
-        jScrollPane2.setViewportView(rSTableMetroCustom1);
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Object.class, java.lang.String.class, java.lang.Integer.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class, java.lang.Object.class, java.lang.String.class
+            };
 
-        rSButtonIconOne1.setBackground(new java.awt.Color(29, 30, 51));
-        rSButtonIconOne1.setBackgroundHover(new java.awt.Color(41, 38, 76));
-        rSButtonIconOne1.setIconTextGap(3);
-        rSButtonIconOne1.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.FORMAT_LIST_BULLETED);
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        Tabla1.setBackgoundHead(new java.awt.Color(29, 30, 51));
+        Tabla1.setBackgoundHover(new java.awt.Color(29, 30, 51));
+        Tabla1.setColorPrimaryText(new java.awt.Color(0, 0, 0));
+        Tabla1.setColorSecundaryText(new java.awt.Color(0, 0, 0));
+        Tabla1.setSelectionBackground(new java.awt.Color(29, 30, 91));
+        jScrollPane2.setViewportView(Tabla1);
+        java.util.ResourceBundle bundle = java.util.ResourceBundle.getBundle("{bundleNameSlashes}"); // NOI18N
+        if (Tabla1.getColumnModel().getColumnCount() > 0) {
+            Tabla1.getColumnModel().getColumn(0).setHeaderValue(bundle.getString("Clientes1.Tabla1.columnModel.title0")); // NOI18N
+            Tabla1.getColumnModel().getColumn(1).setHeaderValue(bundle.getString("Clientes1.Tabla1.columnModel.title1")); // NOI18N
+            Tabla1.getColumnModel().getColumn(2).setHeaderValue(bundle.getString("Clientes1.Tabla1.columnModel.title2")); // NOI18N
+            Tabla1.getColumnModel().getColumn(3).setHeaderValue(bundle.getString("Clientes1.Tabla1.columnModel.title3")); // NOI18N
+            Tabla1.getColumnModel().getColumn(4).setHeaderValue(bundle.getString("Clientes1.Tabla1.columnModel.title4")); // NOI18N
+            Tabla1.getColumnModel().getColumn(5).setHeaderValue(bundle.getString("Clientes1.Tabla1.columnModel.title5")); // NOI18N
+        }
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
-        this.setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(202, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(rSButtonIconOne1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(rSTextFieldMaterialIcon1, javax.swing.GroupLayout.PREFERRED_SIZE, 403, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(107, 107, 107)
-                        .addComponent(rSButtonIconOne3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(rSButtonIconOne2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 663, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55))
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 160, 1180, 470));
+
+        txtBuscar.setForeground(new java.awt.Color(0, 0, 0));
+        txtBuscar.setColorIcon(new java.awt.Color(0, 0, 0));
+        txtBuscar.setColorMaterial(new java.awt.Color(153, 153, 153));
+        txtBuscar.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.SEARCH);
+        txtBuscar.setPhColor(new java.awt.Color(102, 102, 102));
+        java.util.ResourceBundle bundle1 = java.util.ResourceBundle.getBundle("vista/Bundle"); // NOI18N
+        txtBuscar.setPlaceholder(bundle1.getString("Clientes1.txtBuscar.placeholder")); // NOI18N
+        txtBuscar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBuscarActionPerformed(evt);
+            }
+        });
+        add(txtBuscar, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 90, 440, 40));
+
+        btnNuevo.setBackground(new java.awt.Color(46, 49, 82));
+        btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/plus (2).png"))); // NOI18N
+        btnNuevo.setText(bundle1.getString("Clientes1.btnNuevo.text")); // NOI18N
+        btnNuevo.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnNuevo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevoActionPerformed(evt);
+            }
+        });
+        add(btnNuevo, new org.netbeans.lib.awtextra.AbsoluteConstraints(1120, 640, 110, 40));
+
+        btnNuevo1.setBackground(new java.awt.Color(46, 49, 82));
+        btnNuevo1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/plus (2).png"))); // NOI18N
+        btnNuevo1.setText(bundle1.getString("Clientes1.btnNuevo1.text")); // NOI18N
+        btnNuevo1.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnNuevo1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevo1ActionPerformed(evt);
+            }
+        });
+        add(btnNuevo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 110, 110, 30));
+
+        btnNuevo2.setBackground(new java.awt.Color(46, 49, 82));
+        btnNuevo2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/plus (2).png"))); // NOI18N
+        btnNuevo2.setText(bundle1.getString("Clientes1.btnNuevo2.text")); // NOI18N
+        btnNuevo2.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnNuevo2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevo2ActionPerformed(evt);
+            }
+        });
+        add(btnNuevo2, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 640, 110, 40));
+
+        jPanel1.setBackground(new java.awt.Color(29, 30, 51));
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 50, Short.MAX_VALUE)
         );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(121, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(rSButtonIconOne1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rSButtonIconOne2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(rSButtonIconOne3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addComponent(rSTextFieldMaterialIcon1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(20, 20, 20)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(70, 70, 70))
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 40, Short.MAX_VALUE)
         );
+
+        add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 640, 50, 40));
+
+        btnNuevo3.setBackground(new java.awt.Color(46, 49, 82));
+        btnNuevo3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/plus (2).png"))); // NOI18N
+        btnNuevo3.setText(bundle1.getString("Clientes1.btnNuevo3.text")); // NOI18N
+        btnNuevo3.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnNuevo3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevo3ActionPerformed(evt);
+            }
+        });
+        add(btnNuevo3, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 110, 30));
+
+        btnNuevo4.setBackground(new java.awt.Color(46, 49, 82));
+        btnNuevo4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/plus (2).png"))); // NOI18N
+        btnNuevo4.setText(bundle1.getString("Clientes1.btnNuevo4.text")); // NOI18N
+        btnNuevo4.setFont(new java.awt.Font("Roboto Bold", 1, 16)); // NOI18N
+        btnNuevo4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnNuevo4ActionPerformed(evt);
+            }
+        });
+        add(btnNuevo4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 110, 30));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void txtBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBuscarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBuscarActionPerformed
+
+    private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevoActionPerformed
+
+    private void btnNuevo1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevo1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevo1ActionPerformed
+
+    private void btnNuevo2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevo2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevo2ActionPerformed
+
+    private void btnNuevo3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevo3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevo3ActionPerformed
+
+    private void btnNuevo4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevo4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnNuevo4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private RSMaterialComponent.RSTableMetroCustom Tabla1;
+    private rojeru_san.RSButtonRiple btnNuevo;
+    private rojeru_san.RSButtonRiple btnNuevo1;
+    private rojeru_san.RSButtonRiple btnNuevo2;
+    private rojeru_san.RSButtonRiple btnNuevo3;
+    private rojeru_san.RSButtonRiple btnNuevo4;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
-    private RSMaterialComponent.RSButtonIconOne rSButtonIconOne1;
-    private RSMaterialComponent.RSButtonIconOne rSButtonIconOne2;
-    private RSMaterialComponent.RSButtonIconOne rSButtonIconOne3;
-    private RSMaterialComponent.RSTableMetroCustom rSTableMetroCustom1;
-    private RSMaterialComponent.RSTextFieldMaterialIcon rSTextFieldMaterialIcon1;
+    private RSMaterialComponent.RSTextFieldMaterialIcon txtBuscar;
     // End of variables declaration//GEN-END:variables
 }
