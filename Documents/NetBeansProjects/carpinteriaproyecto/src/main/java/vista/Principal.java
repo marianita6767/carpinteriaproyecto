@@ -55,7 +55,7 @@ public class Principal extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jPanel3 = new javax.swing.JPanel();
         dos = new rojeru_san.RSButton();
-        rSButton3 = new rojeru_san.RSButton();
+        ocho = new rojeru_san.RSButton();
         uno = new rojeru_san.RSButton();
         tres = new rojeru_san.RSButton();
         cuatro = new rojeru_san.RSButton();
@@ -106,17 +106,17 @@ public class Principal extends javax.swing.JFrame {
         });
         jPanel3.add(dos, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 240, 260, 60));
 
-        rSButton3.setBackground(new java.awt.Color(29, 30, 51));
-        rSButton3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        rSButton3.setText("Gestion de usuarios");
-        rSButton3.setColorHover(new java.awt.Color(128, 128, 128));
-        rSButton3.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
-        rSButton3.addActionListener(new java.awt.event.ActionListener() {
+        ocho.setBackground(new java.awt.Color(29, 30, 51));
+        ocho.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        ocho.setText("Gestion de usuarios");
+        ocho.setColorHover(new java.awt.Color(128, 128, 128));
+        ocho.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
+        ocho.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButton3ActionPerformed(evt);
+                ochoActionPerformed(evt);
             }
         });
-        jPanel3.add(rSButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 260, 60));
+        jPanel3.add(ocho, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 600, 260, 60));
 
         uno.setBackground(new java.awt.Color(29, 30, 51));
         uno.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -249,6 +249,7 @@ public class Principal extends javax.swing.JFrame {
             this.cuatro.setSelected(false);
                this.cinco.setSelected(false);
                   this.seis.setSelected(false);
+                  this.ocho.setSelected(false);
                   
     
     } 
@@ -262,6 +263,7 @@ public class Principal extends javax.swing.JFrame {
             this.cuatro.setSelected(false);
                this.cinco.setSelected(false);
                   this.siete.setSelected(false);
+                  this.ocho.setSelected(false);
                   
     
     } 
@@ -275,6 +277,7 @@ public class Principal extends javax.swing.JFrame {
             this.cuatro.setSelected(false);
                this.seis.setSelected(false);
                   this.siete.setSelected(false);
+                  this.ocho.setSelected(false);
                   
     
     }    
@@ -288,6 +291,7 @@ public class Principal extends javax.swing.JFrame {
             this.cinco.setSelected(false);
                this.seis.setSelected(false);
                   this.siete.setSelected(false);
+                  this.ocho.setSelected(false);
           }            
     
     }//GEN-LAST:event_cuatroActionPerformed
@@ -301,6 +305,7 @@ public class Principal extends javax.swing.JFrame {
             this.cinco.setSelected(false);
                this.seis.setSelected(false);
                   this.siete.setSelected(false);
+                  this.ocho.setSelected(false);
           }            
            
     }//GEN-LAST:event_tresActionPerformed
@@ -314,12 +319,13 @@ public class Principal extends javax.swing.JFrame {
             this.cinco.setSelected(false);
                this.seis.setSelected(false);
                   this.siete.setSelected(false);
+                  this.ocho.setSelected(false);
     Escritorio1 es = new Escritorio1();
         es.setSize(890,690 );
         es.setLocation(0,0);
         
         contenedor.removeAll();
-
+        contenedor.add(es);
         contenedor.revalidate();
         contenedor.repaint();
                   
@@ -327,20 +333,39 @@ public class Principal extends javax.swing.JFrame {
   }   
     }//GEN-LAST:event_unoActionPerformed
 
-    private void rSButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton3ActionPerformed
-           
-                  
-    }//GEN-LAST:event_rSButton3ActionPerformed
-
-    private void dosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosActionPerformed
-       if(!this.dos.isSelected()) {
-   this.uno.setSelected(false);
+    private void ochoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ochoActionPerformed
+         if(!this.ocho.isSelected()) {
+    this.uno.setSelected(false);   
+   this.dos.setSelected(false);
       this.tres.setSelected(false);
          this.cuatro.setSelected(false);
             this.cinco.setSelected(false);
                this.seis.setSelected(false);
                   this.siete.setSelected(false);
-                  this.dos.setSelected(true);
+                  this.ocho.setSelected(true);
+        
+        Usuarios us = new Usuarios();
+        us.setSize(1290, 730 );
+   
+        
+        contenedor.removeAll();
+        contenedor.add(us);
+        contenedor.revalidate();
+        contenedor.repaint();            
+         }           
+    }//GEN-LAST:event_ochoActionPerformed
+
+    private void dosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dosActionPerformed
+       if(!this.dos.isSelected()) {
+   this.uno.setSelected(false);
+   this.dos.setSelected(true);
+      this.tres.setSelected(false);
+         this.cuatro.setSelected(false);
+            this.cinco.setSelected(false);
+               this.seis.setSelected(false);
+                  this.siete.setSelected(false);
+                  
+                  this.ocho.setSelected(false);
                   
                           // Crear y mostrar el panel de inventario
         Inventario in = new Inventario();
@@ -418,7 +443,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private rojeru_san.RSButton menu;
-    private rojeru_san.RSButton rSButton3;
+    private rojeru_san.RSButton ocho;
     private rojeru_san.RSButton seis;
     private rojeru_san.RSButton siete;
     private rojeru_san.RSButton tres;

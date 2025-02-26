@@ -40,7 +40,17 @@ public class proveedores extends javax.swing.JPanel {
         Tabla1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         Tabla1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-
+                {null, "42354", "juan", null, "4314214", null},
+                {null, "24565", "Daniel", null, "1324234", null},
+                {null, "65786", "Brayan", null, "1234235", null},
+                {null, "98057", "Esteban ", null, "4568456", null},
+                {null, "76954", "Mariana ", null, "4567356", null},
+                {null, "85678", "Maria", null, "7658335", null},
+                {null, "59776", "David", null, "5675643", null},
+                {null, "78099", "Karen", null, "5467568", null},
+                {null, "45667", "Pilar", null, "6474567", null},
+                {null, "78955", "Alejandro", null, "4574569", null},
+                {null, "09866", "Yuri", null, "4568763", null}
             },
             new String [] {
                 "#", "ID", "Nombre", "Correo", "Telefono", "Direccion"

@@ -33,6 +33,13 @@ public class formulario_usuarios extends javax.swing.JPanel {
         rSTextFieldIconOne2 = new RSMaterialComponent.RSTextFieldIconOne();
         rSTextFieldIconOne3 = new RSMaterialComponent.RSTextFieldIconOne();
         rSTextFieldIconOne4 = new RSMaterialComponent.RSTextFieldIconOne();
+        jPanel2 = new javax.swing.JPanel();
+        rSButtonBigIcon_new2 = new newscomponents.RSButtonBigIcon_new();
+        rSComboBoxMaterial2 = new RSMaterialComponent.RSComboBoxMaterial();
+        rSTextFieldIconOne5 = new RSMaterialComponent.RSTextFieldIconOne();
+        rSTextFieldIconOne6 = new RSMaterialComponent.RSTextFieldIconOne();
+        rSTextFieldIconOne7 = new RSMaterialComponent.RSTextFieldIconOne();
+        rSTextFieldIconOne8 = new RSMaterialComponent.RSTextFieldIconOne();
 
         jPanel1.setBackground(new java.awt.Color(29, 30, 51));
         jPanel1.setPreferredSize(new java.awt.Dimension(1290, 730));
@@ -78,36 +85,107 @@ public class formulario_usuarios extends javax.swing.JPanel {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(180, 180, 180)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(rSTextFieldIconOne4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(rSTextFieldIconOne4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(rSComboBoxMaterial1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(rSTextFieldIconOne1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(rSTextFieldIconOne2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(rSTextFieldIconOne3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 229, Short.MAX_VALUE)
-                        .addComponent(rSButtonBigIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(491, 491, 491))))
+                        .addGap(126, 126, 126)
+                        .addComponent(rSButtonBigIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(594, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(178, 178, 178)
+                .addGap(187, 187, 187)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(rSButtonBigIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(9, 9, 9)
                         .addComponent(rSTextFieldIconOne1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(rSTextFieldIconOne2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(rSComboBoxMaterial1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(rSTextFieldIconOne3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(rSComboBoxMaterial1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(rSTextFieldIconOne3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(rSButtonBigIcon_new1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(rSTextFieldIconOne4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(306, Short.MAX_VALUE))
+        );
+
+        jPanel2.setBackground(new java.awt.Color(29, 30, 51));
+        jPanel2.setPreferredSize(new java.awt.Dimension(1290, 730));
+
+        rSButtonBigIcon_new2.setBackground(new java.awt.Color(29, 30, 51));
+        rSButtonBigIcon_new2.setText("Foto");
+        rSButtonBigIcon_new2.setBgHover(new java.awt.Color(29, 30, 71));
+        rSButtonBigIcon_new2.setBgShadeHover(new java.awt.Color(0, 0, 0));
+
+        rSComboBoxMaterial2.setForeground(new java.awt.Color(29, 30, 51));
+        rSComboBoxMaterial2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rol", "Administrador", "Contador", "Trabajador" }));
+
+        rSTextFieldIconOne5.setForeground(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne5.setBorderColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne5.setColorIcon(new java.awt.Color(29, 30, 91));
+        rSTextFieldIconOne5.setPhColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne5.setPlaceholder("Nombre");
+
+        rSTextFieldIconOne6.setForeground(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne6.setBorderColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne6.setColorIcon(new java.awt.Color(29, 30, 91));
+        rSTextFieldIconOne6.setPhColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne6.setPlaceholder("Apellido");
+
+        rSTextFieldIconOne7.setForeground(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne7.setBorderColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne7.setColorIcon(new java.awt.Color(29, 30, 91));
+        rSTextFieldIconOne7.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.CALL);
+        rSTextFieldIconOne7.setPhColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne7.setPlaceholder("Telefono");
+
+        rSTextFieldIconOne8.setForeground(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne8.setBorderColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne8.setColorIcon(new java.awt.Color(29, 30, 91));
+        rSTextFieldIconOne8.setIcons(rojeru_san.efectos.ValoresEnum.ICONS.MAIL);
+        rSTextFieldIconOne8.setPhColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldIconOne8.setPlaceholder("Correo");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(180, 180, 180)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(rSTextFieldIconOne8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(rSComboBoxMaterial2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(rSTextFieldIconOne5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(rSTextFieldIconOne6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(rSTextFieldIconOne7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(126, 126, 126)
+                        .addComponent(rSButtonBigIcon_new2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(594, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(187, 187, 187)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(rSTextFieldIconOne5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rSTextFieldIconOne6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(rSComboBoxMaterial2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(11, 11, 11)
+                        .addComponent(rSTextFieldIconOne7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(rSButtonBigIcon_new2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(rSTextFieldIconOne8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(306, Short.MAX_VALUE))
         );
 
@@ -117,7 +195,9 @@ public class formulario_usuarios extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -125,6 +205,8 @@ public class formulario_usuarios extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
@@ -132,11 +214,18 @@ public class formulario_usuarios extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private newscomponents.RSButtonBigIcon_new rSButtonBigIcon_new1;
+    private newscomponents.RSButtonBigIcon_new rSButtonBigIcon_new2;
     private RSMaterialComponent.RSComboBoxMaterial rSComboBoxMaterial1;
+    private RSMaterialComponent.RSComboBoxMaterial rSComboBoxMaterial2;
     private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne1;
     private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne2;
     private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne3;
     private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne4;
+    private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne5;
+    private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne6;
+    private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne7;
+    private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne8;
     // End of variables declaration//GEN-END:variables
 }
