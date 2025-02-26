@@ -47,6 +47,7 @@ public class Contrasena extends javax.swing.JFrame {
         rSButton1 = new rojeru_san.RSButton();
         jLabel8 = new javax.swing.JLabel();
         txtcorreo = new javax.swing.JTextField();
+        jSplitPane1 = new javax.swing.JSplitPane();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -100,6 +101,7 @@ public class Contrasena extends javax.swing.JFrame {
         jLabel8.setText("Dirección de correo electrónico");
         jPanel9.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, 230, 30));
         jPanel9.add(txtcorreo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, 490, 50));
+        jPanel9.add(jSplitPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 120, -1, -1));
 
         jPanel8.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, 520, 540));
 
@@ -191,6 +193,7 @@ public class Contrasena extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
+    private javax.swing.JSplitPane jSplitPane1;
     private rojeru_san.RSButton rSButton1;
     private javax.swing.JTextField txtcorreo;
     // End of variables declaration//GEN-END:variables
