@@ -5,6 +5,7 @@
 package vista;
 
 import controlador.Contrl_login;
+import java.awt.Color;
 //import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.JOptionPane;
@@ -48,8 +49,8 @@ public class login extends javax.swing.JFrame {
         jCheckBox1 = new javax.swing.JCheckBox();
         passtxt = new javax.swing.JPasswordField();
         jSeparator2 = new javax.swing.JSeparator();
-        login = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        rSMaterialButtonRectangle1 = new rojerusan.RSMaterialButtonRectangle();
         jPanel8 = new javax.swing.JPanel();
 
         jPanel5.setBackground(new java.awt.Color(29, 30, 51));
@@ -71,11 +72,11 @@ public class login extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setFont(new java.awt.Font("Comic Sans MS", 0, 36)); // NOI18N
-        jLabel4.setText("BIENVENIDO");
-        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 255, -1));
+        jLabel4.setFont(new java.awt.Font("SansSerif", 0, 36)); // NOI18N
+        jLabel4.setText("¡BIENVENIDO!");
+        jPanel6.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 80, 270, 50));
 
-        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel1.setText("USUARIO");
         jPanel6.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 90, 30));
 
@@ -95,7 +96,7 @@ public class login extends javax.swing.JFrame {
                 txt_usuarioActionPerformed(evt);
             }
         });
-        jPanel6.add(txt_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 160, 20));
+        jPanel6.add(txt_usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 270, 20));
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel3.setText("CONTRASEÑA");
@@ -128,20 +129,6 @@ public class login extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(51, 51, 51));
         jPanel6.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 270, 10));
 
-        login.setText("INGRESAR");
-        login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        login.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                loginMouseClicked(evt);
-            }
-        });
-        login.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                loginActionPerformed(evt);
-            }
-        });
-        jPanel6.add(login, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 400, 110, 30));
-
         jLabel2.setText("¿Olvidaste contraseña?");
         jLabel2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -150,6 +137,15 @@ public class login extends javax.swing.JFrame {
             }
         });
         jPanel6.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 320, -1, -1));
+
+        rSMaterialButtonRectangle1.setBackground(new java.awt.Color(29, 30, 51));
+        rSMaterialButtonRectangle1.setText("INGRESAR");
+        rSMaterialButtonRectangle1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSMaterialButtonRectangle1ActionPerformed(evt);
+            }
+        });
+        jPanel6.add(rSMaterialButtonRectangle1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, 190, 50));
 
         getContentPane().add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 400, 540));
 
@@ -166,28 +162,18 @@ public class login extends javax.swing.JFrame {
         contra.setVisible(true); // Hacer visible la nueva ventana
         // Cerrar la ventana actual
         this.dispose();
-
     }//GEN-LAST:event_jLabel2MousePressed
-
-    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
-Login(); 
-Principal pc = new Principal();
-pc.setVisible(true); // Hacer visible la nueva ventana
-    // Cerrar la ventana actual
-        this.dispose();
-    }//GEN-LAST:event_loginActionPerformed
-
-    private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
-
-    }//GEN-LAST:event_loginMouseClicked
 
     private void passtxtActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passtxtActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_passtxtActionPerformed
 
     private void passtxtMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_passtxtMousePressed
-   
-        
+ if(txt_usuario.getText().equals(""));
+   txt_usuario.setText("");
+   txt_usuario.setForeground(Color.black);
+   passtxt.setText("********");
+    passtxt.setForeground(Color.black);
     }//GEN-LAST:event_passtxtMousePressed
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
@@ -199,9 +185,21 @@ pc.setVisible(true); // Hacer visible la nueva ventana
     }//GEN-LAST:event_txt_usuarioActionPerformed
 
     private void txt_usuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_usuarioMousePressed
-        
-        
+   if(txt_usuario.getText().equals("")){
+   txt_usuario.setText("");
+   txt_usuario.setForeground(Color.black);
+   
+   }
+   if(String.valueOf(passtxt.getPassword()).isEmpty()){
+   passtxt.setText("********");
+    passtxt.setForeground(Color.black);
+   }
+   
     }//GEN-LAST:event_txt_usuarioMousePressed
+
+    private void rSMaterialButtonRectangle1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSMaterialButtonRectangle1ActionPerformed
+       Login();
+    }//GEN-LAST:event_rSMaterialButtonRectangle1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -249,9 +247,9 @@ pc.setVisible(true); // Hacer visible la nueva ventana
     private javax.swing.JPanel jPanel8;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JButton login;
     private javax.swing.JPasswordField passtxt;
     private rojerusan.RSButtonMetroBeanInfo rSButtonMetroBeanInfo1;
+    private rojerusan.RSMaterialButtonRectangle rSMaterialButtonRectangle1;
     private javax.swing.JTextField txt_usuario;
     // End of variables declaration//GEN-END:variables
 
@@ -264,7 +262,11 @@ private void Login(){
      usuario.setContrasena(passtxt.getText().trim());
      
      if(controlUsuario.loginUser(usuario)){
-         JOptionPane.showMessageDialog(null, "bien");
+        JOptionPane.showMessageDialog(null, "Logeo Exitoso. Bienvenido "+usuario);
+           Principal prin= new Principal();
+        prin.setVisible(true); // Hacer visible la nueva ventana
+        // Cerrar la ventana actual
+        this.dispose();
     }else{
          JOptionPane.showMessageDialog(null, "el usuario o las credenciales estan incorrectas, intente de nuevo");
      }
