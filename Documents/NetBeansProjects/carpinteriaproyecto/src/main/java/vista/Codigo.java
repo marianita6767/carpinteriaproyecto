@@ -10,8 +10,9 @@ package vista;
  */
 public class Codigo extends javax.swing.JFrame {
 
-    
-        
+    /**
+     * Creates new form Codigo
+     */
     public Codigo() {
         initComponents();
     }
@@ -26,20 +27,40 @@ public class Codigo extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel9 = new javax.swing.JPanel();
+        login = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        login1 = new javax.swing.JButton();
+        txt_usuario8 = new javax.swing.JTextField();
+        txt_usuario9 = new javax.swing.JTextField();
+        txt_usuario13 = new javax.swing.JTextField();
+        txt_usuario14 = new javax.swing.JTextField();
+        txt_usuario15 = new javax.swing.JTextField();
+        txt_usuario16 = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
-        textField2 = new necesario.TextField();
-        rSButton1 = new rojeru_san.RSButton();
-        rSButton2 = new rojeru_san.RSButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel9.setBackground(new java.awt.Color(29, 30, 51));
         jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        login.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        login.setText("Cancelar");
+        login.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        login.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                loginMouseClicked(evt);
+            }
+        });
+        login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                loginActionPerformed(evt);
+            }
+        });
+        jPanel9.add(login, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 370, 50));
 
         jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -48,7 +69,7 @@ public class Codigo extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("tu correo electronico");
+        jLabel3.setText("*******3@gmail.com");
         jPanel9.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 240, 500, 20));
 
         jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
@@ -60,54 +81,152 @@ public class Codigo extends javax.swing.JFrame {
                 jLabel6MousePressed(evt);
             }
         });
-        jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 340, 230, 30));
+        jPanel9.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 350, 230, 30));
 
         jLabel7.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Ingresa el código que te");
         jPanel9.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, 500, 70));
 
+        login1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        login1.setText("Continuar");
+        login1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        login1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                login1MouseClicked(evt);
+            }
+        });
+        login1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                login1ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(login1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 430, 370, 50));
+
+        txt_usuario8.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        txt_usuario8.setForeground(new java.awt.Color(204, 204, 204));
+        txt_usuario8.setText("  2");
+        txt_usuario8.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt_usuario8.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txt_usuario8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txt_usuario8MousePressed(evt);
+            }
+        });
+        txt_usuario8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_usuario8ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txt_usuario8, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 280, 60, 60));
+
+        txt_usuario9.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        txt_usuario9.setForeground(new java.awt.Color(204, 204, 204));
+        txt_usuario9.setText("  6");
+        txt_usuario9.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt_usuario9.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txt_usuario9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txt_usuario9MousePressed(evt);
+            }
+        });
+        txt_usuario9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_usuario9ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txt_usuario9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, 60, 60));
+
+        txt_usuario13.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        txt_usuario13.setForeground(new java.awt.Color(204, 204, 204));
+        txt_usuario13.setText("  9");
+        txt_usuario13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt_usuario13.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txt_usuario13.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txt_usuario13MousePressed(evt);
+            }
+        });
+        txt_usuario13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_usuario13ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txt_usuario13, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 280, 60, 60));
+
+        txt_usuario14.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        txt_usuario14.setForeground(new java.awt.Color(204, 204, 204));
+        txt_usuario14.setText("  9");
+        txt_usuario14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt_usuario14.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txt_usuario14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txt_usuario14MousePressed(evt);
+            }
+        });
+        txt_usuario14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_usuario14ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txt_usuario14, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 280, 60, 60));
+
+        txt_usuario15.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        txt_usuario15.setForeground(new java.awt.Color(204, 204, 204));
+        txt_usuario15.setText("  0");
+        txt_usuario15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt_usuario15.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txt_usuario15.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txt_usuario15MousePressed(evt);
+            }
+        });
+        txt_usuario15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_usuario15ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txt_usuario15, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 280, 60, 60));
+
+        txt_usuario16.setFont(new java.awt.Font("Segoe UI", 0, 30)); // NOI18N
+        txt_usuario16.setForeground(new java.awt.Color(204, 204, 204));
+        txt_usuario16.setText("  6");
+        txt_usuario16.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        txt_usuario16.setCursor(new java.awt.Cursor(java.awt.Cursor.TEXT_CURSOR));
+        txt_usuario16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txt_usuario16MousePressed(evt);
+            }
+        });
+        txt_usuario16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt_usuario16ActionPerformed(evt);
+            }
+        });
+        jPanel9.add(txt_usuario16, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 280, 60, 60));
+
         jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 17)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Ingresa el codigo de 6 digitos que te hemos enviado a ");
         jPanel9.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 220, 500, 20));
 
-        textField2.setBackground(new java.awt.Color(204, 204, 204));
-        textField2.setForeground(new java.awt.Color(0, 0, 0));
-        textField2.setPlaceholder("");
-        textField2.setSelectedTextColor(new java.awt.Color(255, 0, 102));
-        textField2.setSelectionColor(new java.awt.Color(102, 102, 255));
-        textField2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                textField2ActionPerformed(evt);
-            }
-        });
-        jPanel9.add(textField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 290, 460, -1));
-
-        rSButton1.setBackground(new java.awt.Color(153, 153, 153));
-        rSButton1.setText("Atras");
-        rSButton1.setColorHover(new java.awt.Color(0, 112, 192));
-        rSButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButton1ActionPerformed(evt);
-            }
-        });
-        jPanel9.add(rSButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 180, 40));
-
-        rSButton2.setBackground(new java.awt.Color(153, 153, 153));
-        rSButton2.setText("Continuar");
-        rSButton2.setColorHover(new java.awt.Color(102, 255, 102));
-        rSButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rSButton2ActionPerformed(evt);
-            }
-        });
-        jPanel9.add(rSButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 180, 40));
-
         getContentPane().add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 570, 630));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void loginMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_loginMouseClicked
+
+    }//GEN-LAST:event_loginMouseClicked
+
+    private void loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginActionPerformed
+  login lg = new login();
+            lg.setVisible(true);
+            dispose();
+        
+        
+        
+    }//GEN-LAST:event_loginActionPerformed
 
     private void jLabel6MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel6MousePressed
      ////
@@ -115,17 +234,61 @@ public class Codigo extends javax.swing.JFrame {
      
     }//GEN-LAST:event_jLabel6MousePressed
 
-    private void rSButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton1ActionPerformed
+    private void login1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_login1MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_rSButton1ActionPerformed
+    }//GEN-LAST:event_login1MouseClicked
 
-    private void rSButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_rSButton2ActionPerformed
+    private void login1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_login1ActionPerformed
+     
+    }//GEN-LAST:event_login1ActionPerformed
 
-    private void textField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_textField2ActionPerformed
+    private void txt_usuario8MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_usuario8MousePressed
         // TODO add your handling code here:
-    }//GEN-LAST:event_textField2ActionPerformed
+    }//GEN-LAST:event_txt_usuario8MousePressed
+
+    private void txt_usuario8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuario8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario8ActionPerformed
+
+    private void txt_usuario9MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_usuario9MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario9MousePressed
+
+    private void txt_usuario9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuario9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario9ActionPerformed
+
+    private void txt_usuario13MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_usuario13MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario13MousePressed
+
+    private void txt_usuario13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuario13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario13ActionPerformed
+
+    private void txt_usuario14MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_usuario14MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario14MousePressed
+
+    private void txt_usuario14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuario14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario14ActionPerformed
+
+    private void txt_usuario15MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_usuario15MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario15MousePressed
+
+    private void txt_usuario15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuario15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario15ActionPerformed
+
+    private void txt_usuario16MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txt_usuario16MousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario16MousePressed
+
+    private void txt_usuario16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt_usuario16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt_usuario16ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -169,8 +332,13 @@ public class Codigo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel jPanel9;
-    private rojeru_san.RSButton rSButton1;
-    private rojeru_san.RSButton rSButton2;
-    private necesario.TextField textField2;
+    private javax.swing.JButton login;
+    private javax.swing.JButton login1;
+    private javax.swing.JTextField txt_usuario13;
+    private javax.swing.JTextField txt_usuario14;
+    private javax.swing.JTextField txt_usuario15;
+    private javax.swing.JTextField txt_usuario16;
+    private javax.swing.JTextField txt_usuario8;
+    private javax.swing.JTextField txt_usuario9;
     // End of variables declaration//GEN-END:variables
 }
