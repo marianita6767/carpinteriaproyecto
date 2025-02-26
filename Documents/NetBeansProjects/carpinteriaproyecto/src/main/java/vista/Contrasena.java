@@ -142,7 +142,7 @@ public class Contrasena extends javax.swing.JFrame {
             }
         } else {
             JOptionPane.showMessageDialog(this, "El correo no está registrado.", "Error", JOptionPane.ERROR_MESSAGE);
-        }
+        }///////
     
     }//GEN-LAST:event_rSButton1ActionPerformed
 
