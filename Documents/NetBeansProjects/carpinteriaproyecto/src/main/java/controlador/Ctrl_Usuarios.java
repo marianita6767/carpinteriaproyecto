@@ -16,7 +16,7 @@ public class Ctrl_Usuarios {
         Consulta_Usuarios consulta = new Consulta_Usuarios();
         String codigo = consulta.recuperarCuenta(usuario, correo);
 
-        if (codigo != null) {  // Si existe el usuario y se generó un código
+        if (codigo != null) { 
             try {
                 Properties props = new Properties();
                 props.put("mail.smtp.host", "smtp.gmail.com");
@@ -42,11 +42,11 @@ public class Ctrl_Usuarios {
                         + "El equipo de Carpintería José Abel");
 
                 Transport.send(mensaje);
-                return true;  // Código enviado correctamente
+                return true;
             } catch (MessagingException ex) {
                 Logger.getLogger(Ctrl_Usuarios.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        return false;  // No se envió el código
+        return false;  
     }
 }

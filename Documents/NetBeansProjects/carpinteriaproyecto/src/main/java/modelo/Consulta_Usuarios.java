@@ -12,7 +12,7 @@ public class Consulta_Usuarios extends Conexion {
     
     public String generarCodigo() {
         Random rand = new Random();
-        int codigo = 100000 + rand.nextInt(900000); // Código de 6 dígitos
+        int codigo = 100000 + rand.nextInt(900000); 
         return String.valueOf(codigo);
     }
 
@@ -29,11 +29,11 @@ public class Consulta_Usuarios extends Conexion {
             ps.setString(2, correo_electronico);
             res = ps.executeQuery();
 
-            if (res.next()) { // Si el usuario existe
+            if (res.next()) { 
                 int idUsuario = res.getInt("id_usuario");
                 codigoRecuperacion = generarCodigo();
 
-                // Insertar código de recuperación en la tabla 'recuperacion'
+               
                 String insertQuery = "INSERT INTO recuperacion (correo_electronico, codigo, fecha_generacion, usuario_id_usuario) VALUES (?, ?, NOW(), ?)";
                 try (PreparedStatement psInsert = con.prepareStatement(insertQuery)) {
                     psInsert.setString(1, correo_electronico);
@@ -73,7 +73,7 @@ public String obtenerUsuarioDesdeCorreo(String correo) {
         System.out.println("Correo recibido: '" + correo + "'");
 
         ps = con.prepareStatement(query);
-        ps.setString(1, correo.trim()); // Evita espacios adicionales
+        ps.setString(1, correo.trim()); 
         System.out.println("Ejecutando consulta: " + ps.toString());
 
         res = ps.executeQuery();
