@@ -39,6 +39,9 @@ public class CrearUsuario extends javax.swing.JPanel {
         rSTextFieldMaterial1 = new RSMaterialComponent.RSTextFieldMaterial();
         rSTextFieldMaterial2 = new RSMaterialComponent.RSTextFieldMaterial();
         rSTextFieldMaterial3 = new RSMaterialComponent.RSTextFieldMaterial();
+        rSTextFieldMaterial4 = new RSMaterialComponent.RSTextFieldMaterial();
+        rSTextFieldMaterial5 = new RSMaterialComponent.RSTextFieldMaterial();
+        rSTextFieldMaterial6 = new RSMaterialComponent.RSTextFieldMaterial();
 
         jLabel2.setText("jLabel2");
 
@@ -74,7 +77,7 @@ public class CrearUsuario extends javax.swing.JPanel {
         jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
         jLabel6.setText("Telefono");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 200, 120, 30));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 190, 120, 30));
 
         jLabel7.setFont(new java.awt.Font("Nirmala UI Semilight", 0, 18)); // NOI18N
         jLabel7.setText("Nombre");
@@ -103,7 +106,7 @@ public class CrearUsuario extends javax.swing.JPanel {
         rSTextFieldMaterial2.setPhColor(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial2.setPlaceholder("Ingrese el nombre");
         rSTextFieldMaterial2.setSelectionColor(new java.awt.Color(29, 30, 51));
-        jPanel1.add(rSTextFieldMaterial2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 380, -1));
+        jPanel1.add(rSTextFieldMaterial2, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 220, 380, -1));
 
         rSTextFieldMaterial3.setForeground(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial3.setCaretColor(new java.awt.Color(29, 30, 51));
@@ -112,6 +115,30 @@ public class CrearUsuario extends javax.swing.JPanel {
         rSTextFieldMaterial3.setPlaceholder("Ingrese el nombre");
         rSTextFieldMaterial3.setSelectionColor(new java.awt.Color(29, 30, 51));
         jPanel1.add(rSTextFieldMaterial3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 140, 380, -1));
+
+        rSTextFieldMaterial4.setForeground(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial4.setCaretColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial4.setColorMaterial(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial4.setPhColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial4.setPlaceholder("Ingrese el nombre");
+        rSTextFieldMaterial4.setSelectionColor(new java.awt.Color(29, 30, 51));
+        jPanel1.add(rSTextFieldMaterial4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 380, -1));
+
+        rSTextFieldMaterial5.setForeground(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial5.setCaretColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial5.setColorMaterial(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial5.setPhColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial5.setPlaceholder("Ingrese el nombre");
+        rSTextFieldMaterial5.setSelectionColor(new java.awt.Color(29, 30, 51));
+        jPanel1.add(rSTextFieldMaterial5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 380, -1));
+
+        rSTextFieldMaterial6.setForeground(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial6.setCaretColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial6.setColorMaterial(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial6.setPhColor(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial6.setPlaceholder("Ingrese el nombre");
+        rSTextFieldMaterial6.setSelectionColor(new java.awt.Color(29, 30, 51));
+        jPanel1.add(rSTextFieldMaterial6, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 140, 380, -1));
 
         add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 880, 450));
     }// </editor-fold>//GEN-END:initComponents
@@ -135,5 +162,8 @@ public class CrearUsuario extends javax.swing.JPanel {
     private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial1;
     private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial2;
     private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial3;
+    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial4;
+    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial5;
+    private RSMaterialComponent.RSTextFieldMaterial rSTextFieldMaterial6;
     // End of variables declaration//GEN-END:variables
 }

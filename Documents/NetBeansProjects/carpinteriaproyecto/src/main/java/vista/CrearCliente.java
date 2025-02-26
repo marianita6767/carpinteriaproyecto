@@ -64,6 +64,7 @@ public class CrearCliente extends javax.swing.JPanel {
         rSTextFieldMaterial1.setForeground(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial1.setCaretColor(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial1.setColorMaterial(new java.awt.Color(29, 30, 51));
+        rSTextFieldMaterial1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rSTextFieldMaterial1.setPhColor(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial1.setPlaceholder("Ingrese el nombre");
         rSTextFieldMaterial1.setSelectionColor(new java.awt.Color(29, 30, 51));
@@ -74,12 +75,13 @@ public class CrearCliente extends javax.swing.JPanel {
 
         rSTextFieldMaterial2.setForeground(new java.awt.Color(29, 30, 31));
         rSTextFieldMaterial2.setColorMaterial(new java.awt.Color(29, 30, 31));
+        rSTextFieldMaterial2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rSTextFieldMaterial2.setPhColor(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial2.setPlaceholder("Ingrese el apellido");
         add(rSTextFieldMaterial2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 260, -1));
 
         jLabel3.setText("Numero de identificacion");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 130, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 120, -1, -1));
 
         jLabel4.setText("error");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 180, 210, -1));
@@ -87,6 +89,7 @@ public class CrearCliente extends javax.swing.JPanel {
         rSTextFieldMaterial3.setForeground(new java.awt.Color(0, 0, 0));
         rSTextFieldMaterial3.setColorMaterial(new java.awt.Color(0, 0, 0));
         rSTextFieldMaterial3.setDisabledTextColor(new java.awt.Color(51, 51, 51));
+        rSTextFieldMaterial3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rSTextFieldMaterial3.setPhColor(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial3.setPlaceholder("Numero de identificacion");
         add(rSTextFieldMaterial3, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 140, 260, -1));
@@ -96,6 +99,7 @@ public class CrearCliente extends javax.swing.JPanel {
 
         rSTextFieldMaterial4.setForeground(new java.awt.Color(29, 30, 31));
         rSTextFieldMaterial4.setColorMaterial(new java.awt.Color(29, 30, 31));
+        rSTextFieldMaterial4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rSTextFieldMaterial4.setPhColor(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial4.setPlaceholder("Direccion");
         rSTextFieldMaterial4.addActionListener(new java.awt.event.ActionListener() {
@@ -107,7 +111,7 @@ public class CrearCliente extends javax.swing.JPanel {
 
         rSComboBoxMaterial2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Tipo de identificacion:", "CC", "TI", "CE" }));
         rSComboBoxMaterial2.setColorMaterial(new java.awt.Color(29, 30, 51));
-        rSComboBoxMaterial2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        rSComboBoxMaterial2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         add(rSComboBoxMaterial2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 280, -1));
 
         jLabel6.setText("Apellido");
@@ -115,6 +119,7 @@ public class CrearCliente extends javax.swing.JPanel {
 
         rSTextFieldMaterial5.setForeground(new java.awt.Color(29, 30, 31));
         rSTextFieldMaterial5.setColorMaterial(new java.awt.Color(29, 30, 31));
+        rSTextFieldMaterial5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         rSTextFieldMaterial5.setPhColor(new java.awt.Color(29, 30, 51));
         rSTextFieldMaterial5.setPlaceholder("Correo electronico");
         add(rSTextFieldMaterial5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 280, -1));
