@@ -4,11 +4,18 @@
  */
 package vista;
 
-import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.GridLayout;
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.SwingUtilities;
+
 
 /**
  *
@@ -23,6 +30,7 @@ public class Usuarios extends javax.swing.JPanel {
         initComponents();
     }
 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -139,7 +147,7 @@ public class Usuarios extends javax.swing.JPanel {
                 rSButtonGradientIcon_new1ActionPerformed(evt);
             }
         });
-        jPanel1.add(rSButtonGradientIcon_new1, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 40, -1, -1));
+        jPanel1.add(rSButtonGradientIcon_new1, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 40, -1, -1));
 
         jPanel3.setBackground(new java.awt.Color(29, 30, 81));
         jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 5));
@@ -262,7 +270,8 @@ public class Usuarios extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rSTextFieldMaterialIcon1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSTextFieldMaterialIcon1ActionPerformed
-    // Obtener el contenedor que contiene los JPanels
+    
+// Obtener el contenedor que contiene los JPanels
     Container container = jPanel1; // Cambia esto para usar jPanel1
 
     // Obtener el texto del campo de texto
@@ -316,9 +325,8 @@ public class Usuarios extends javax.swing.JPanel {
     }//GEN-LAST:event_rSButtonIconOne1ActionPerformed
 
     private void rSButtonGradientIcon_new1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonGradientIcon_new1ActionPerformed
-        formularioUsuarios dialog = new formularioUsuarios(new javax.swing.JFrame(), true);
-        dialog.setLocationRelativeTo(null); // Centra la ventana emergente
-        dialog.setVisible(true); // Muestra la ventana        // TODO add your handling code here:
+    PopupPersonalizado popup = new PopupPersonalizado((JFrame) SwingUtilities.getWindowAncestor(this));
+    popup.setVisible(true);    
     }//GEN-LAST:event_rSButtonGradientIcon_new1ActionPerformed
 
     private void rSButtonIconOne7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonIconOne7ActionPerformed
@@ -353,4 +361,70 @@ public class Usuarios extends javax.swing.JPanel {
     private RSMaterialComponent.RSButtonIconOne rSButtonIconOne9;
     private RSMaterialComponent.RSTextFieldMaterialIcon rSTextFieldMaterialIcon1;
     // End of variables declaration//GEN-END:variables
+
+   
+    
+
+public class PopupPersonalizado extends JDialog {
+    private JTextField txtNombre;
+    private JTextField txtApellido;
+    private JTextField txtRol;
+    private JTextField txtTelefono;
+    private JTextField txtCorreo;
+    private JButton btnEnviar;
+
+    public PopupPersonalizado(JFrame parent) {
+        super(parent, "Formulario de Datos", true); // true para que sea modal
+        setLayout(new GridLayout(6, 2));
+        setSize(300, 300);
+        setLocationRelativeTo(parent); // Centrar respecto al padre
+
+        // Crear campos de texto
+        txtNombre = new JTextField();
+        txtApellido = new JTextField();
+        txtRol = new JTextField();
+        txtTelefono = new JTextField();
+        txtCorreo = new JTextField();
+        btnEnviar = new JButton("Enviar");
+
+        
+        // Agregar componentes al diálogo
+        add(new JLabel("Nombre:"));
+        add(txtNombre);
+        add(new JLabel("Apellido:"));
+        add(txtApellido);
+        add(new JLabel("Rol:"));
+        add(txtRol);
+        add(new JLabel("Teléfono:"));
+        add(txtTelefono);
+        add(new JLabel("Correo:"));
+        add(txtCorreo);
+        add(btnEnviar);
+
+        // Acción del botón Enviar
+        btnEnviar.addActionListener(e -> enviarDatos());
+
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE); // Cerrar el diálogo al hacer clic en la X
+    }
+
+    private void enviarDatos() {
+        String nombre = txtNombre.getText();
+        String apellido = txtApellido.getText();
+        String rol = txtRol.getText();
+        String telefono = txtTelefono.getText();
+        String correo = txtCorreo.getText();
+
+        // Aquí puedes procesar los datos como desees
+        JOptionPane.showMessageDialog(this, "Datos enviados:\n" +
+                "Nombre: " + nombre + "\n" +
+                "Apellido: " + apellido + "\n" +
+                "Rol: " + rol + "\n" +
+                "Teléfono: " + telefono + "\n" +
+                "Correo: " + correo);
+
+        // Cerrar el diálogo después de enviar
+        dispose();
+    }
 }
+}
+

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
-package vista;
+
 
 /**
  *
@@ -10,9 +10,12 @@ package vista;
  */
 public class formularioUsuarios extends javax.swing.JDialog {
 
-    /**
-     * Creates new form formularioUsuarios
-     */
+    private String nombre;
+    private String apellido;
+    private String telefono;
+    private String correo;
+    private String rol;
+    
     public formularioUsuarios(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
@@ -49,6 +52,11 @@ public class formularioUsuarios extends javax.swing.JDialog {
 
         rSComboBoxMaterial1.setForeground(new java.awt.Color(29, 30, 51));
         rSComboBoxMaterial1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Rol", "Administrador", "Contador", "Trabajador" }));
+        rSComboBoxMaterial1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rSComboBoxMaterial1ActionPerformed(evt);
+            }
+        });
 
         rSTextFieldIconOne1.setForeground(new java.awt.Color(29, 30, 51));
         rSTextFieldIconOne1.setBorderColor(new java.awt.Color(29, 30, 51));
@@ -163,22 +171,54 @@ public class formularioUsuarios extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void rSButtonMaterialGradientOne1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMaterialGradientOne1ActionPerformed
-        // TODO add your handling code here:
+        // Obtener los datos de los campos de texto
+        nombre = rSTextFieldIconOne1.getText();
+        apellido = rSTextFieldIconOne2.getText();
+        telefono = rSTextFieldIconOne3.getText();
+        correo = rSTextFieldIconOne4.getText();
+        rol = (String) rSComboBoxMaterial1.getSelectedItem();
+
+        // Cerrar el formulario
+        this.dispose();
+    
     }//GEN-LAST:event_rSButtonMaterialGradientOne1ActionPerformed
 
     private void rSButtonMaterialGradientOne2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSButtonMaterialGradientOne2ActionPerformed
-        // TODO add your handling code here:
+        // Cerrar el formulario sin guardar
+        this.dispose();
+    }                                                            
+
+    // Métodos para obtener los datos
+    public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public String getTelefono() {
+        return telefono;
+    }
+
+    public String getCorreo() {
+        return correo;
+    }
+
+    public String getRol() {
+        return rol;
+    }
     }//GEN-LAST:event_rSButtonMaterialGradientOne2ActionPerformed
+
+    private void rSComboBoxMaterial1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rSComboBoxMaterial1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_rSComboBoxMaterial1ActionPerformed
 
     /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -186,30 +226,23 @@ public class formularioUsuarios extends javax.swing.JDialog {
                     break;
                 }
             }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(formularioUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(formularioUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(formularioUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(formularioUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                formularioUsuarios dialog = new formularioUsuarios(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
                         System.exit(0);
                     }
                 });
-                dialog.setVisible(true);
             }
         });
+
+
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -223,4 +256,4 @@ public class formularioUsuarios extends javax.swing.JDialog {
     private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne3;
     private RSMaterialComponent.RSTextFieldIconOne rSTextFieldIconOne4;
     // End of variables declaration//GEN-END:variables
-}
+
